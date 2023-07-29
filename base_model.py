@@ -132,7 +132,7 @@ class BaseModel(object):
             batch_recall, batch_ndcg = 0, 0
             for i in range(len(subs)):
                 u , u_score = subs[i], scores[i]
-                one_recall, one_ndcg, one_num, one_ratio, perf = self.test_one_user(u, u_score)
+                one_recall, one_ndcg = self.test_one_user(u, u_score)
                 batch_recall = batch_recall + one_recall
                 batch_ndcg = batch_ndcg + one_ndcg
                 
