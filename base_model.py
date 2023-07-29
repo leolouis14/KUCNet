@@ -29,7 +29,6 @@ class BaseModel(object):
         self.test_user_set = loader.test_user_set
 
         self.n_train = loader.n_train
-        self.n_valid = loader.n_valid
         self.n_test  = loader.n_test
         self.n_layer = args.n_layer
         self.args = args
