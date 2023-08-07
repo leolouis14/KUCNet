@@ -1,0 +1,3 @@
+120,0.001200, 0.9940, 0.000014,  48, 5, 3, 20, 0.0200,idd
+0[TEST] recall:0.1698  ndcg:0.0953   [TIME] train:8035.9428 inference:10379.5240
+1[TEST] recall:0.1724  ndcg:0.0973   [TIME] train:16146.3679 inference:10458.0724

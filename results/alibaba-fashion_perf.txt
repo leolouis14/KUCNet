@@ -1,0 +1,5 @@
+70,0.000000, 0.9980, 0.000010,  48, 5, 5, 10, 0.2000,relu
+0[TEST] recall:0.0997  ndcg:0.0629   [TIME] train:34960.2990 inference:31504.2473
+1[TEST] recall:0.1001  ndcg:0.0642   [TIME] train:69609.2266 inference:31161.5867
+2[TEST] recall:0.0976  ndcg:0.0612   [TIME] train:104166.5102 inference:31358.9275
+3[TEST] recall:0.1034  ndcg:0.0664   [TIME] train:138848.0081 inference:33608.8469

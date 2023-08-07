@@ -33,7 +33,7 @@ class DataLoader:
         self.n_nodes = self.n_ent + self.n_users    # user + entity            
         self.n_rel = max(self.arraytriple[:,1]) + 1  
 
-        if task_dir == 'data/Dis_ind_item/' or  task_dir == 'data/Dis_5fold_item/'or  task_dir == 'data/ind_last-fm/'or  task_dir == 'data/ind_amazon-book/'or  task_dir == 'data/ind_alibaba-fashion/':
+        if task_dir == 'data/Dis_ind_item/' or  task_dir == 'data/Dis_5fold_item/'or  task_dir == 'data/new_last-fm/'or  task_dir == 'data/new_amazon-book/'or  task_dir == 'data/new_alibaba-fashion/':
             self.item_set = self.cf_to_item_set(self.all_cf)
             self.facts_cf, self.train_cf = self.generate_inductive_train(self.all_cf)
         else:
@@ -320,7 +320,7 @@ class DataLoader:
             self.load_graph(self.fact_data)
             self.train_q, self.train_a, self.train_w = self.load_train_query(self.train_triple)
             self.n_train = len(self.train_q)
-        elif self.task_dir == 'data/ind_last-fm/'or  self.task_dir == 'data/ind_amazon-book/'or  self.task_dir == 'data/ind_alibaba-fashion/':
+        elif self.task_dir == 'data/new_last-fm/'or  self.task_dir == 'data/new_amazon-book/'or  self.task_dir == 'data/new_alibaba-fashion/':
             self.train_triple = np.array(self.train_triple)
             n_all = len(self.train_triple)
             rand_idx = np.random.permutation(n_all)

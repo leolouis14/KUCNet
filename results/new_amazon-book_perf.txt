@@ -1,0 +1,17 @@
+170,0.000500, 0.9940, 0.000014,  48, 5, 3, 24, 0.0100,idd
+0[TEST] recall:0.2169  ndcg:0.1625  [TIME] train:7465.7820 inference:8409.8714
+1[TEST] recall:0.2172  ndcg:0.1628  [TIME] train:15049.4037 inference:8435.9294
+2[TEST] recall:0.2175  ndcg:0.1630  [TIME] train:22711.1159 inference:8484.6267
+3[TEST] recall:0.2178  ndcg:0.1625  [TIME] train:30359.8299 inference:8263.0745
+4[TEST] recall:0.2179  ndcg:0.1621  [TIME] train:37826.0204 inference:7709.7620
+5[TEST] recall:0.2197  ndcg:0.1636  [TIME] train:44606.1718 inference:7885.6939
+6[TEST] recall:0.2191  ndcg:0.1626  [TIME] train:51583.1295 inference:8447.9472
+7[TEST] recall:0.2198  ndcg:0.1628  [TIME] train:59284.8656 inference:8358.4811
+8[TEST] recall:0.2209  ndcg:0.1632  [TIME] train:66870.3520 inference:8212.8728
+9[TEST] recall:0.2195  ndcg:0.1623  [TIME] train:74395.9007 inference:10858.3218
+10[TEST] recall:0.2213  ndcg:0.1663  [TIME] train:84356.1109 inference:11971.9399
+11[TEST] recall:0.2239  ndcg:0.1666  [TIME] train:94196.3152 inference:12527.6004
+12[TEST] recall:0.2235  ndcg:0.1658  [TIME] train:104429.3383 inference:12656.9889
+13[TEST] recall:0.2242  ndcg:0.1668  [TIME] train:114472.7511 inference:11985.3406
+14[TEST] recall:0.2225  ndcg:0.1678  [TIME] train:124353.9266 inference:12463.5069
+15[TEST] recall:0.2270  ndcg:0.1685  [TIME] train:133953.1882 inference:12355.9377

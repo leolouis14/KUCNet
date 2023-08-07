@@ -44,7 +44,7 @@ if __name__ == '__main__':
     opts.n_items = loader.n_items
     opts.n_nodes = loader.n_nodes
 
-    if dataset == 'ind_alibaba-fashion':  
+    if dataset == 'new_alibaba-fashion':  
         opts.lr = 0.00005
         opts.decay_rate = 0.999
         opts.lamb = 0.0001
@@ -62,25 +62,13 @@ if __name__ == '__main__':
         opts.lamb = 0.00001
         opts.hidden_dim = 48
         opts.attn_dim = 5
-        opts.n_layer = 3
+        opts.n_layer = 5
         opts.dropout = 0.2
         opts.act = 'relu'
-        opts.n_batch = 30
-        opts.n_tbatch = 30
-        opts.K = 110
+        opts.n_batch = 10
+        opts.n_tbatch = 10
+        opts.K = 70
     elif dataset == 'last-fm' :
-        opts.lr = 0.00035
-        opts.decay_rate = 0.994
-        opts.lamb = 0.00014
-        opts.hidden_dim = 48
-        opts.attn_dim = 5
-        opts.n_layer = 3
-        opts.dropout = 0.02
-        opts.act = 'idd'
-        opts.n_batch = 30
-        opts.n_tbatch = 30
-        opts.K = 35
-    elif dataset == 'ind_last-fm' :
         opts.lr = 0.0004
         opts.decay_rate = 0.994
         opts.lamb = 0.00014
@@ -91,8 +79,20 @@ if __name__ == '__main__':
         opts.act = 'idd'
         opts.n_batch = 30
         opts.n_tbatch = 30
+        opts.K = 35
+    elif dataset == 'new_last-fm' :
+        opts.lr = 0.0004
+        opts.decay_rate = 0.994
+        opts.lamb = 0.00014
+        opts.hidden_dim = 48
+        opts.attn_dim = 5
+        opts.n_layer = 3
+        opts.dropout = 0.02
+        opts.act = 'idd'
+        opts.n_batch = 36
+        opts.n_tbatch = 36
         opts.K = 50
-    elif dataset == 'ind_amazon-book':
+    elif dataset == 'new_amazon-book':
         opts.lr = 0.0005
         opts.decay_rate = 0.994  
         opts.lamb = 0.000014      
@@ -101,8 +101,8 @@ if __name__ == '__main__':
         opts.n_layer = 3
         opts.dropout = 0.01
         opts.act = 'idd'
-        opts.n_batch = 30
-        opts.n_tbatch = 30
+        opts.n_batch = 24
+        opts.n_tbatch = 24
         opts.K = 170
     elif dataset == 'amazon-book' :
         opts.lr = 0.0012
@@ -113,8 +113,8 @@ if __name__ == '__main__':
         opts.n_layer = 3
         opts.dropout = 0.02
         opts.act = 'idd'
-        opts.n_batch = 30
-        opts.n_tbatch = 30
+        opts.n_batch = 20
+        opts.n_tbatch = 20
         opts.K = 120
     elif dataset == 'Dis_5fold_item'   :
         opts.lr = 0.0005
