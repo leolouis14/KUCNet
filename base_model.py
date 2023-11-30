@@ -61,7 +61,7 @@ class BaseModel(object):
             loss.backward()
             self.optimizer.step()
 
-            if i % 600 == 0 :
+            if i % 1000 == 0 :
                 print('batch:',i, 'loss:', loss.item())
             # avoid NaN
             for p in self.model.parameters():
@@ -140,7 +140,7 @@ class BaseModel(object):
             ndcg = ndcg + batch_ndcg
             batch_recall = batch_recall / len(subs)
             batch_ndcg = batch_ndcg / len(subs)
-            if id % 500 == 0:
+            if id % 1000 == 0:
                 print(id, 'batch recall:', batch_recall, 'batch ndcg:', batch_ndcg)
 
         recall = recall / n_data

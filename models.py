@@ -152,7 +152,7 @@ class KUCNet_trans(torch.nn.Module):
                 h0 = torch.zeros(1, nodes.size(0), hidden.size(1)).cuda().index_copy_(1, old_nodes_new_idx, h0)
             
             hidden = self.dropout(hidden)
-            hidden, h0 = self.gate (hidden.unsqueeze(0), h0)  #  
+            hidden, h0 = self.gate (hidden.unsqueeze(0), h0)  
             hidden = hidden.squeeze(0)
  
         scores = self.W_final(hidden).squeeze(-1)   

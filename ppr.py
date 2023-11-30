@@ -21,7 +21,7 @@ def get_ppr(loader, bs=128, N=20):
     Mkg = torch.sparse_coo_tensor(index, value, (loader.n_nodes,loader.n_nodes)).cuda()
 
     M = torch.sparse.mm(Mkg, cnt).cuda()
-    print('M ready')
+    # print('M ready')
     s_time = time.time()
 
     alpha = 0.85

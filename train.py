@@ -4,7 +4,6 @@ import torch
 import numpy as np
 from load_data import DataLoader
 from base_model import BaseModel
-from utils import select_gpu
 
 parser = argparse.ArgumentParser(description="Parser for KUCNet")
 parser.add_argument('--data_path', type=str, default='data/last-fm/')
