@@ -1,5 +1,7 @@
 # KUCNet
-The code for our paper "Knowledge-Enhanced Recommendation with User-Centric Subgraph Network".
+The code for our paper "Knowledge-Enhanced Recommendation with User-Centric Subgraph Network", accept by 2024 IEEE 40th International Conference on Data Engineering (ICDE). 
+
+Link to paper: https://ieeexplore.ieee.org/document/10597876, https://arxiv.org/pdf/2403.14377
 
 
 
